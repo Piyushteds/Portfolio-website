@@ -1,6 +1,6 @@
-/*=========================================
-        BACK TO TOP BUTTON
-=========================================*/
+
+        // BACK TO TOP BUTTON
+
 
 const topBtn = document.getElementById("topBtn");
 
@@ -30,9 +30,9 @@ topBtn.addEventListener("click", () => {
 
 });
 
-/*=========================================
-        SMOOTH NAVIGATION
-=========================================*/
+
+        // SMOOTH NAVIGATION
+
 
 document.querySelectorAll("nav a").forEach(link => {
 
@@ -56,9 +56,8 @@ document.querySelectorAll("nav a").forEach(link => {
 
 });
 
-/*=========================================
-        ACTIVE NAVBAR
-=========================================*/
+        // ACTIVE NAVBAR
+
 
 const navLinks = document.querySelectorAll("nav a");
 
@@ -74,9 +73,9 @@ navLinks.forEach(link=>{
 
 });
 
-/*=========================================
-        HERO FADE ANIMATION
-=========================================*/
+
+        // HERO FADE ANIMATION
+
 
 window.addEventListener("load",()=>{
 
@@ -85,9 +84,9 @@ window.addEventListener("load",()=>{
     document.querySelector(".right").classList.add("show");
 
 });
-/*=========================================
-        SCROLL REVEAL ANIMATION
-=========================================*/
+
+        // SCROLL REVEAL ANIMATION
+
 
 const observer = new IntersectionObserver((entries)=>{
 
@@ -114,9 +113,9 @@ document.querySelectorAll(
 });
 
 
-/*=========================================
-        PROFILE PARALLAX
-=========================================*/
+
+        // PROFILE PARALLAX
+
 
 const profile = document.querySelector(".image-box");
 
@@ -132,9 +131,9 @@ document.addEventListener("mousemove",(e)=>{
 });
 
 
-/*=========================================
-        GLOW EFFECT
-=========================================*/
+
+        // GLOW EFFECT
+
 
 document.querySelectorAll(".circle").forEach(circle=>{
 
@@ -153,9 +152,9 @@ document.querySelectorAll(".circle").forEach(circle=>{
 });
 
 
-/*=========================================
-        BUTTON RIPPLE EFFECT
-=========================================*/
+
+        // BUTTON RIPPLE EFFECT
+
 
 document.querySelectorAll(".buttons a").forEach(btn=>{
 
@@ -185,9 +184,9 @@ document.querySelectorAll(".buttons a").forEach(btn=>{
 });
 
 
-/*=========================================
-        FLOATING GLOW
-=========================================*/
+
+        // FLOATING GLOW
+
 
 document.querySelectorAll(".blur").forEach((blur,index)=>{
 
@@ -205,9 +204,9 @@ document.querySelectorAll(".blur").forEach((blur,index)=>{
 });
 
 
-/*=========================================
-        ACTIVE NAV ON SCROLL
-=========================================*/
+
+        // ACTIVE NAV ON SCROLL
+
 
 const sections=document.querySelectorAll("section");
 const links=document.querySelectorAll("nav a");
@@ -245,9 +244,9 @@ window.addEventListener("scroll",()=>{
 });
 
 
-/*=========================================
-        PRELOADER
-=========================================*/
+
+        // PRELOADER
+
 
 window.addEventListener("load",()=>{
 
@@ -255,7 +254,8 @@ window.addEventListener("load",()=>{
 
 });
 
-// connect file
+     // connect file
+
 // About
 document.getElementById("connectBtn1").addEventListener("click", function (e) {
     e.preventDefault();
@@ -279,3 +279,21 @@ document.getElementById("connectBtn4").addEventListener("click", function (e) {
     e.preventDefault();
     window.location.href = "skills/skills.html";
 });
+
+
+//change greeting based on time of day
+const greeting = document.getElementById("greeting");
+const hour = new Date().getHours();
+
+if (hour >= 5 && hour < 12) {
+    greeting.textContent = "Good Morning";
+}
+else if (hour >= 12 && hour < 17) {
+    greeting.textContent = "Good Afternoon";
+}
+else if (hour >= 17 && hour < 21) {
+    greeting.textContent = "Good Evening";
+}
+else {
+    greeting.textContent = "Good Night";
+}
