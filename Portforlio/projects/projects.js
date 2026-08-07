@@ -14,7 +14,7 @@ document.getElementById("github1").addEventListener("click", function (e) {
     window.open("https://github.com/Piyushteds/AI-smart-farmer-project", "_blank");
 });
 
-// Project 2
+//Project 2
 document.getElementById("buttons2").addEventListener("click", function (e) {
     e.preventDefault();
     window.open("https://your-demo2-link.com", "_blank");
@@ -22,7 +22,7 @@ document.getElementById("buttons2").addEventListener("click", function (e) {
 
 document.getElementById("buttons2").addEventListener("click", function (e) {
     e.preventDefault();
-    window.open("https://github.com/yourusername/project2", "_blank");
+    window.open("https://github.com/Piyushteds/gemchat", "_blank");
 });
 
 // Project 3
