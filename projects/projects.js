@@ -14,11 +14,11 @@ document.getElementById("github1").addEventListener("click", function (e) {
     window.open("https://github.com/Piyushteds/AI-smart-farmer-project", "_blank");
 });
 
-// Project 2
-// document.getElementById("buttons2").addEventListener("click", function (e) {
-//     e.preventDefault();
-//     window.open("http://127.0.0.1:5500/index.html", "_blank");
-// });
+//Project 2
+document.getElementById("buttons2").addEventListener("click", function (e) {
+    e.preventDefault();
+    window.open("https://your-demo2-link.com", "_blank");
+});
 
 document.getElementById("buttons2").addEventListener("click", function (e) {
     e.preventDefault();
