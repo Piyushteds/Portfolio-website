@@ -279,6 +279,3 @@ document.getElementById("connectBtn4").addEventListener("click", function (e) {
     e.preventDefault();
     window.location.href = "skills/skills.html";
 });
-
-
-4554565455
